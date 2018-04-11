@@ -1,0 +1,420 @@
+/*
+
+INSTRUCTION FOR STYLING:
+
+# Change background, color of the horizontal menu bar:
+.em_nav .hnav { }
+
+# Change font, color of hyperlinks:
+.em_nav a { }
+.em_nav a:hover { }
+
+# Menu item's links when hover or active:
+.em_nav li:hover > a, .em_nav li.active > a { }
+
+
+# Top level's menu:
+# -----------------
+
+# Change padding, font, color of top menu item:
+.hnav .menu-item-depth-0 a { }
+
+# Change position of the drop-down menu of top level menu:
+.hnav .menu-item-depth-0 > .menu-container,
+.em-catalog-navigation.horizontal > li > ul,
+.em-catalog-navigation.horizontal > li:hover > ul { top:50px }
+
+# Level 2+ menu:
+# -----------------
+
+# Change background color, padding of container of level 2+ menu container:
+.em_nav .menu-item-link > ul,
+.em_nav .em-catalog-navigation ul { }
+
+# Change font, color of hyperlink of level 2+ menu items:
+.em_nav .menu-item-depth-1 a,
+.em_nav .em-catalog-navigation li li a { }
+
+# Change font, color of hover/active hyperlink of level 2+ menu items:
+.em_nav .menu-item-depth-1 li:hover > a, 
+.em_nav .menu-item-depth-1 li.active > a,
+.em_nav .em-catalog-navigation li li:hover > a,
+.em_nav .em-catalog-navigation li li.active > a { }
+
+
+# ----------------
+
+# Add a gutter between 2 children of hbox:
+.em_nav .menu-item-hbox > .menu-container > li { margin-left:10px }
+.em_nav .menu-item-hbox > .menu-container > li:first-child { margin-left:0 }
+
+# Fix hbox on mobile view
+.adapt-0 .menu-item-hbox > .menu-container { white-space:normal }
+.adapt-0 .menu-item-hbox > .menu-container > li { display:block; margin-left:0 }
+
+
+
+BELOW BASE CSS SHOULD NOT BE CHANGED:
+===============================================================================
+*/
+
+
+ul ul, ul ol, ol ol, ol ul { font-size:100% }
+
+.em_nav { }
+.em_nav ul { margin:0; }
+.em_nav li { /*margin:0;*/}
+.em_nav em,
+.em_nav code{word-wrap:break-word;}
+
+.menu-item-depth-0 a { display:block;}
+.hnav .menu-item-depth-0 > a { display:block; /*height:20px; line-height:20px;*/ padding:0px }
+.em-catalog-navigation > li > a{ display:block; /*height:20px; line-height:20px;*/ padding:11px 0px }
+.menu-container .em-catalog-navigation > li > a{ display:block; /*height:20px; line-height:20px;*/ padding:11px 0px }
+.em-catalog-navigation ul.level0 li a{display:block;/*line-height:20px; */padding:11px 0px }
+
+
+.adapt-0 .menu-item-depth-0 > ul.menu-container{ padding:15px 20px}
+.adapt-0 .menu-item-depth-0.dd-menu-link > ul.menu-container{ padding:15px 0px}
+/* horizontal menu */
+/*.menu-item-depth-1 > .menu-container > li{ padding:0 20px; margin:0}*/
+.menu-container .grid_24 .menu-item-depth-2 > .menu-container > li{ /*padding:0 10px;*/}
+.adapt-0 .menu-container .grid_24 .menu-item-depth-2 > .menu-container > li{ padding:0}
+.menu-container .grid_24{ margin:0}
+.menu-container .menu_col24{ /*padding-left:10px*/}
+.hnav .menu-item-depth-0 { float:left; position:relative }
+.hnav .menu-item-depth-0 > .menu-container { position:absolute; top:50px; left:-9999px; z-index:9999 }
+
+
+/* vertical menu */
+
+.vnav { min-width:100px }
+.vnav .menu-item-depth-0 { position:relative }
+.vnav .menu-item-depth-0 a { display:block; padding:0px }
+
+.vnav .menu-item-depth-0 > .menu-container { position:absolute; top:0; left:-9999px; z-index:9999 }
+
+/* general */
+.menu-item-parent > a { /*margin-right:30px*/ }
+.em_nav a.arrow { position:absolute; margin-right:0 !important; width:32px; /*text-indent:-99999px; overflow:hidden; */top:0; right:0; padding:11px 10px; z-index:11 }
+.em_nav a.arrow span { /*display:block;*/ /* add background arrow here */ }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+	.menu-item-depth-0 > .menu-container { display:none }
+	.menu-item-depth-0:hover > .menu-container { display:block }
+	.em-catalog-navigation li > ul { display:none }
+	.em-catalog-navigation li:hover > ul { display:block }
+	.menu-item-link.menu-item-depth-1.menu-item-parent > .menu-container {display:none}
+	.menu-item-link.menu-item-depth-1.menu-item-parent:hover > .menu-container { display:block }
+}
+
+.menu-item-link > .menu-container,
+.em_nav .menu-item-link > ul,
+.em_nav.nav-container .em-catalog-navigation ul ,
+.em_nav .em-catalog-navigation ul ,
+.nav-container .em-catalog-navigation ul{
+	background-color:#fff;
+	padding:17px 0px;
+	box-shadow:0 2px 5px #ccc;
+	-moz-box-shadow:0 2px 5px #ccc ;
+	-webkit-box-shadow:0 2px 5px #ccc ;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border:1px solid #cdcdcd;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.adapt-0 .em_nav .em-catalog-navigation ul, 
+.adapt-0 .menu-item-link .menu-item-depth-1 > .menu-container{ border:none}
+/*.menu-item-link .menu-item-depth-1 > ul.menu-container{ padding:10px}*/
+/* ---------- level 2+ ---------- */
+
+/* horizontal menu */
+
+.hnav .menu-item-depth-0:hover > .menu-container,
+.hnav .menu-item-depth-0.hover > .menu-container { left:0 }
+
+
+/* vertical menu */
+.vnav .menu-item-depth-0:hover > .menu-container,
+.vnav .menu-item-depth-0.hover > .menu-container { left:100% }
+.vnav.nav-right .menu-item-depth-0:hover > .menu-container,
+.vnav.nav-right .menu-item-depth-0.hover > .menu-container { left:auto; right:100% }
+
+
+.menu-item-hbox > .menu-container { white-space:nowrap }
+.menu-item-hbox > .menu-container > li { display:inline-block; white-space:normal; vertical-align:top; /*float:none*/ }
+.adapt-0 .menu-item-hbox > .menu-container > li { display: block; margin-left: 0;}
+.menu-item-link > .menu-container { min-width:160px; background:#fff; box-shadow:0 2px 7px #ccc }
+
+.menu-item-depth-0 .menu-item-link { position:relative }
+.menu-item-depth-0 .menu-item-link > .menu-container { position:absolute; top:0; left:-9999px; z-index:9999 }
+.menu-item-depth-0 .menu-item-link:hover > .menu-container,
+.menu-item-depth-0 .menu-item-link.hover > .menu-container { left:100%; top:-11px }
+.menu-container .menu-item-link a{ padding:11px 0px}
+.dd-menu-link .menu-container .menu-item-link a{/* padding:8px 20px*/}
+.menu-item-link.dd-menu-link ul.menu-container{ padding:0px 20px}
+.menu-item-link.dd-menu-link ul.em-catalog-navigation ul{ padding:0px 20px}
+.menu-item-link.menu-item-depth-0 ul.em-catalog-navigation ul{ padding:0px 20px}
+.adapt-0 .dd-menu-link.menu-item-depth-0 .menu-container li{ padding:0 20px}
+.adapt-0 .dd-menu-link.menu-item-depth-0 > .menu-container > li{ padding:0 20px}
+
+.nav-right .menu-item-depth-0 .menu-item-link:hover > .menu-container,
+.nav-right .menu-item-depth-0 .menu-item-link.hover > .menu-container { left:auto; right:100% }
+
+/* Catalog Navigation */
+.em-catalog-navigation li.parent > a { /*margin-right:30px*/ }
+.em-catalog-navigation li.parent > a.arrow { margin-right:0; padding:5px 0 }
+.em-catalog-navigation ul { min-width:150px; background:#fff; box-shadow:0 2px 7px #ccc }
+.em-catalog-navigation li { position:relative }
+.em-catalog-navigation li > ul { position:absolute; top:0; left:-9999px; z-index:9999 }
+.em-catalog-navigation li:hover > ul,
+.em-catalog-navigation li.hover > ul { left:100%; top:-1px }
+.vnav .menu-item-depth-0 > .em-catalog-navigation li.level0:hover > ul,
+.vnav .menu-item-depth-0 > .em-catalog-navigation li.level0.hover > ul { top:0px }
+.nav-right .em-catalog-navigation li:hover > ul,
+.nav-right .em-catalog-navigation li.hover > ul { left:auto; right:100% }
+
+.hnav .menu-item-depth-1 > .em-catalog-navigation > li > a{ /*padding:8px 20px*/}
+
+.adapt-0 .em-catalog-navigation ul.level0 li{ padding:0 10px}
+.adapt-0 .em-catalog-navigation ul.level0 > li{ padding:0 20px}
+.adapt-0 .menu-container .em-catalog-navigation ul.level0 > li{ padding:0px}
+
+/* Catalog Navigation with vertical style of top level */
+.em-catalog-navigation.horizontal > li { float:left }
+.em-catalog-navigation.horizontal > li > ul { top:50px }
+.em-catalog-navigation.horizontal > li:hover > ul { left:0; top:50px }
+
+
+/* Mobile view */
+
+.adapt-0 .menu-item-link, 
+.adapt-0 .menu-item-text,
+.adapt-0 .menu-item-hbox,
+.adapt-0 .menu-item-vbox,
+.adapt-0 .em-catalog-navigation li { display:block; float:none;}
+
+.adapt-0 .menu-container,
+.adapt-0 .em-catalog-navigation ul { /*width:100% !important;*/ top:0 !important; }
+
+.adapt-0 .hnav .menu-item-depth-0 > .menu-container,
+.adapt-0 .menu-item-link > .menu-container,
+.adapt-0 .em-catalog-navigation li > ul,
+.adapt-0 .menu-item-depth-0 .menu-item-link > .menu-container	{display:none;position:static;}
+.adapt-0 .menu-item-link.mhover > .menu-container,
+.adapt-0 .em-catalog-navigation li.mhover > ul ,
+.adapt-0 .menu-item-depth-0 .menu-item-link.mhover > .menu-container{display:block;position:static; }
+
+
+.em-menu-mobile .menu-item-link, 
+.em-menu-mobile .menu-item-text,
+.em-menu-mobile .menu-item-hbox,
+.em-menu-mobile .menu-item-vbox,
+.em-menu-mobile .em-catalog-navigation li,
+.em-menu-mobile .menu-item-hbox > .menu-container > li{ display:block; float:none; width:100%}
+
+.em-menu-mobile .menu-container,
+.em-menu-mobile .em-catalog-navigation ul { width:100% !important; top:0 !important; }
+
+.em-menu-mobile .vnav .menu-item-depth-0 > .menu-container,
+.em-menu-mobile .hnav .menu-item-depth-0 > .menu-container,
+.em-menu-mobile .menu-item-link > .menu-container,
+.em-menu-mobile .em-catalog-navigation li > ul,
+.em-menu-mobile .menu-item-depth-0 .menu-item-link > .menu-container	{display:none;position:static;}
+.em-menu-mobile .menu-item-link.mhover > .menu-container,
+.em-menu-mobile .em-catalog-navigation li.mhover > ul ,
+.em-menu-mobile .menu-item-depth-0 .menu-item-link.mhover > .menu-container{display:block;position:static;
+}
+
+
+
+
+
+/* Clear Divs */
+.em_nav .hnav:after,
+.em_nav .vnav:after,
+#nav > .menu-container:after,
+.menu-item-hbox:after { content:'.';display:block;clear:both;visibility:hidden;height:0;overflow:hidden }
+
+
+
+.menu_col1,
+.menu_col2,
+.menu_col3,
+.menu_col4,
+.menu_col5,
+.menu_col6,
+.menu_col7,
+.menu_col8,
+.menu_col9,
+.menu_col10,
+.menu_col11,
+.menu_col12,
+.menu_col13,
+.menu_col14,
+.menu_col15,
+.menu_col16,
+.menu_col17,
+.menu_col18,
+.menu_col19,
+.menu_col20,
+.menu_col21,
+.menu_col22,
+.menu_col23,
+.menu_col24 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.menu_col24{ margin:0}
+.menu_col1 {
+	width:28px;
+}
+
+.menu_col2 {
+	width:78px;
+}
+
+.menu_col3 {
+	width:128px;
+}
+
+.menu_col4 {
+	width:178px;
+}
+
+.menu_col5 {
+	width:228px;
+}
+
+.menu_col6 {
+	width:278px;
+}
+
+.menu_col7 {
+	width:328px;
+}
+
+.menu_col8 {
+	width:378px;
+}
+
+.menu_col9 {
+	width:428px;
+}
+
+.menu_col10 {
+	width:478px;
+}
+
+.menu_col11 {
+	width:528px;
+}
+
+.menu_col12 {
+	width:578px;
+}
+
+.menu_col13 {
+	width:628px;
+}
+
+.menu_col14 {
+	width:678px;
+}
+
+.menu_col15 {
+	width:728px;
+}
+
+.menu_col16 {
+	width:778px;
+}
+
+.menu_col17 {
+	width:828px;
+}
+
+.menu_col18 {
+	width:878px;
+}
+
+.menu_col19 {
+	width:928px;
+}
+
+.menu_col20 {
+	width:978px;
+}
+
+.menu_col21 {
+	width:1028px;
+}
+
+.menu_col22 {
+	width:1078px;
+}
+
+.menu_col23 {
+	width:1128px;
+}
+
+.menu_col24 {
+	width:1178px;
+}
+
+.menu_custom {
+	width: 251px;
+}
+
+.em-menu-mobile .menu_custom,
+.em-menu-mobile .menu_col1,
+.em-menu-mobile .menu_col2,
+.em-menu-mobile .menu_col3,
+.em-menu-mobile .menu_col4,
+.em-menu-mobile .menu_col5,
+.em-menu-mobile .menu_col6,
+.em-menu-mobile .menu_col7,
+.em-menu-mobile .menu_col8,
+.em-menu-mobile .menu_col9,
+.em-menu-mobile .menu_col10,
+.em-menu-mobile .menu_col11,
+.em-menu-mobile .menu_col12,
+.em-menu-mobile .menu_col13,
+.em-menu-mobile .menu_col14,
+.em-menu-mobile .menu_col15,
+.em-menu-mobile .menu_col16,
+.em-menu-mobile .menu_col17,
+.em-menu-mobile .menu_col18,
+.em-menu-mobile .menu_col19,
+.em-menu-mobile .menu_col20,
+.em-menu-mobile .menu_col21,
+.em-menu-mobile .menu_col22,
+.em-menu-mobile .menu_col23,
+.em-menu-mobile .menu_col24{ 
+	float:none;
+	display:block;
+	position:static;
+	width:auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

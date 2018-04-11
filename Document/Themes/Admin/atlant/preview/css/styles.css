@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,500,600,700&amp;subset=latin,latin-ext);
+
+
+html *{outline: none !important;}
+html,body{min-height: 100%; padding: 0px; margin: 0px; background: #FFF; position: relative; 
+          font-family: 'Open Sans', sans-serif; font-size: 12px; color: #333; overflow-x: hidden;}
+
+.page-container{width: 1000px; margin: 0px auto; height: 100%;}
+.page-container .page-heading{float: left; width: 100%; padding: 100px 0px 50px; text-align: center;}
+.page-container .page-heading h1{font-size: 32px; font-weight: 300; color: #33414E; padding: 0px; margin: 0px 0px 10px; line-height: 34px;}
+.page-container .page-heading h1 strong{font-weight: 300; color: #E34724;}
+.page-container .page-heading p{font-size: 14px; color: #666; margin: 0px; line-height: 20px; font-weight: 400;}
+
+
+.page-container .page-content{float: left; width: 100%; padding: 0px;}
+.page-container .page-content .template-item{width: 300px; float: left; margin-right: 50px;}
+.page-container .page-content .template-item.le{margin-right: 0px;}
+
+.page-container .page-content .template-item h2{float: left; width: 100%; padding: 0px; margin: 0px 0px 10px; line-height: 30px; 
+                                                font-size: 21px; font-weight: 300; text-align: center; color: #33414E;}
+.page-container .page-content .template-item h2 strong{font-weight: 400;}
+
+.page-container .page-content .template-item a.img{float: left; width: 300px; margin-bottom: 20px;}
+.page-container .page-content .template-item a.img img{width: 100%; -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%);}
+
+.page-container .page-content .template-item a.btn{float: left; width: 200px; margin: 0px 50px; display: block; line-height: 30px; border: 2px solid #33414E; background: #33414E;
+                                                   border-radius: 5px; text-align: center; font-size: 13px; font-weight: 600; color: #FFF; text-decoration: none;
+                                                   -webkit-transition: all 200ms ease; -moz-transition: all 200ms ease; -ms-transition: all 200ms ease; -o-transition: all 200ms ease; transition: all 200ms ease;
+}
+
+.page-container .page-included{float: left; width: 100%; padding: 0px 0px 50px; line-height: 20px; font-size: 19px; color: #E34724; font-weight: 400; text-align: center;}
+
+.page-container .page-content .template-item:hover a.img img{-webkit-filter: grayscale(0%);-moz-filter: grayscale(0%);filter: grayscale(0%);}
+
+.page-container .page-content .template-item a.btn:hover,
+.page-container .page-content .template-item a.btn:focus{background: #E34724; color: #FFF; border-color: #E34724;}
+
+.page-container .page-content .buy-button{float: left; width: 100%; margin: 100px 0px 50px;}
+.page-container .page-content .buy-button h3{font-size: 21px; color: #33414E; font-weight: 300; padding: 0px; margin: 0px 0px 20px; text-align: center;}
+.page-container .page-content .buy-button h3 strong{font-weight: 600;}
+.page-container .page-content .buy-button a{display: block; width: 200px; line-height: 40px; font-size: 14px; color: #FFF; font-weight: 600; text-align: center;
+                                            background: #E34724; border: 2px solid #E34724; border-radius: 5px; margin: 0px auto; text-decoration: none;
+                                            -webkit-transition: all 200ms ease; -moz-transition: all 200ms ease; -ms-transition: all 200ms ease; -o-transition: all 200ms ease; transition: all 200ms ease;
+}
+.page-container .page-content .buy-button a:hover{background: #FFF; color: #E34724;}
+
+
+.page-footer{float: left; width: 100%; line-height: 30px; font-size: 12px; color: #333; font-weight: 500; margin: 50px 0px 20px;}
+.page-footer a{color: #333; text-decoration: none;}
+
+@media only screen and (max-width: 1024px){
+    .page-container{width: 100%;}
+    .page-container .page-heading{padding: 30px 0px;}
+    .page-container .page-content .template-item{float: none; margin: 0px auto 20px;}
+    .page-container .page-content .template-item.le{margin: 0px auto 20px;}
+}

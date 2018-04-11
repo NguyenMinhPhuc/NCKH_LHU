@@ -1,0 +1,48 @@
+/**
+ * EM ProductLabels
+ *
+ * @license commercial software
+ * @copyright (c) 2012 Codespot Software JSC - htmlcooker.com. (http://www.emthemes.com)
+ */
+
+
+.product-img-box { position:relative; }
+.product-view .box-up-sell .products-grid td div.td { position:relative; }
+
+
+.productlabels_icons { position:absolute; top:10px; right:10px; z-index:1}
+.product-img-box .productlabels_icons { z-index:10; }
+.productlabels_icons .label > span{ padding:7px 0; display:block; text-align:center}
+.productlabels_icons .label {display:block; margin-bottom:-10px; padding:13px 7px; border-radius:50%; -moz-border-radius:50%; position:relative; -webkit-border-radius:50%; text-transform:uppercase; min-width:40px; min-height:40px; }
+/*.productlabels_icons .label:before {position:absolute; left:0; 
+content: "";
+bottom: -6px;
+border-width: 6px 0 0 6px;
+border-style: solid;
+border-color: #000 transparent;
+display: block;
+width: 0;}
+.productlabels_icons .label:after {position:absolute; right:-6px; 
+content: "";
+top:0;
+border-width: 0 6px 6px 0;
+border-style: solid;
+border-color: #000 transparent;
+display: block;
+width: 0;}*/
+.productlabels_icons .label > p{margin:0}
+.productlabels_icons .nobg { background:none; width:auto; height:auto; }
+
+.productlabels_icons .orange { background-position:0 0 }
+.productlabels_icons .yellow { background-position:0 -60px }
+.productlabels_icons .blue { background-position:0 -120px }
+.productlabels_icons .violet { background-position:0 -180px }
+.productlabels_icons .red { background-position:0 -240px }
+.productlabels_icons .black { background-position:0 -300px }
+.productlabels_icons .new { background-position:-213px 0}
+.productlabels_icons .special { background-position:-213px -63px }
+.productlabels_icons .hot { background-position:-213px -128px }
+.em_sidebar .products-list .productlabels_icons .label{ width:39px; height:39px; padding-top:6px; font-size:90%}
+.em_sidebar .products-list .productlabels_icons .new { background-position:-112px 0}
+.em_sidebar .products-list .productlabels_icons .special { background-position:-112px -46px }
+.em_sidebar .products-list .productlabels_icons .hot { background-position:-112px -93px }

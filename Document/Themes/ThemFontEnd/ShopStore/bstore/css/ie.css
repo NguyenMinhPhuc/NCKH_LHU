@@ -1,0 +1,71 @@
+.ie9 ul.step li.step-todo {
+    background: #F2F2F2;
+}
+.ie9 ul.step li.first{
+	border-top-left-radius: 4px;
+}
+.ie9 .search-product select{
+	min-height:40px;
+}
+.ie9 .wish-prioriti, .ie9 .s-page-select-option, .ie9 .short-select-option, .ie9 .selected-state, .ie9 .selected-country, .ie9 .delivery-address, .ie9 .con-form-select{
+	background: rgba(0, 0, 0, 0);
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-top:1px solid #ccc;
+}
+.ie9 .wish-prioriti select{
+	width:187px;
+	height:26px;
+}
+.ie9 .selected-state select#sel-state, .ie9 .selected-country select#sel-country, .ie9 .delivery-address select#deli-address{
+	width:270px;
+	height:26px;
+}
+.ie9 .single-product-size select{
+	width:220px;
+}
+
+.ie9 .short-select-option select, .ie9 .s-page-select-option select{
+	height:26px;
+}
+.ie9 .con-form-select{
+	height:29px;
+}
+.ie9 .con-form-select select{
+	width:261px;
+}
+.ie9 .birth-day, .ie9 .birth-month, .ie9 .birth-year{
+	background: rgba(0, 0, 0, 0);
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-top:1px solid #ccc;
+	height:28px;
+}
+.ie9 .birth-day select, .ie9 .birth-month select, .ie9 .birth-year select{
+	height:26px;
+}
+@media (min-width: 1170px) and (max-width: 1199px) {
+.ie9 .con-form-select select{
+	width:211px;
+}
+}
+@media (min-width: 992px) and (max-width: 1169px) {
+.ie9 .con-form-select select{
+	width:211px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.ie9 .con-form-select select{
+	width:218px;
+}
+}
+@media (max-width: 767px) {
+.ie9 .con-form-select select{
+	width:269px;
+}	
+}
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+.ie9 .con-form-select select{
+	width:418px;
+}
+}

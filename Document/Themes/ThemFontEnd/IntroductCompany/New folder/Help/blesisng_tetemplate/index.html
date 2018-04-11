@@ -1,0 +1,275 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Blessing - Responsive HTML5/CSS3 Template</title>
+	
+	<meta name="description" content="Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!">
+	<meta name="author" content="ThemeMakers">
+	<meta name="copyright" content="ThemeMakers">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-09-24T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#html_structure">HTML Structure</a></li>
+			<li><a href="#important_notice">Important Notice</a></li>
+			<li><a href="#css_files_and_structure">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#contact_form">Contact Form</a></li>
+			<li><a href="#psd_files">PSD Files</a></li>
+			<li><a href="#sources_and_credits">Sources and Credits</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright ThemeMakers 2012<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Blessing</h1><h2>Responsive HTML5/CSS3 Template<br>
+	(Shared on www.MafiaShare.net)</h2><hr><ul><li>Created: 09/24/2012</li><li>latest Update: 09/24/2012</li><li>By: ThemeMakers</li><li><a href=""></a></li><li>Email: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#101;&#98;&#116;&#101;&#109;&#112;&#108;&#97;&#116;&#101;&#109;&#97;&#115;&#116;&#101;&#114;&#115;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#101;&#98;&#116;&#101;&#109;&#112;&#108;&#97;&#116;&#101;&#109;&#97;&#115;&#116;&#101;&#114;&#115;&#46;&#99;&#111;&#109;</a></li></ul><p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!</p></section><section id="html_structure">
+	<h3>HTML Structure</h3><hr class="notop">
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px; -webkit-text-size-adjust: none; ">This theme is a fixed layout with two columns. All of the information within the main content area is nested within a div with an id of &quot;content&quot;. The sidebar&#39;s (column #2) content is within a div with an id of &quot;sidebar&quot;. The general template structure is the same throughout the template. Here is the general structure.</span></p>
+<p>
+	<img alt="" src="assets/images/image_2.png" style="width: 650px; height: 1943px; "></p>
+<p>
+	If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+<pre class="brush: css">
+#content a {color: #someColor;} </pre>
+<p>
+	If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn&#39;t a similar style that has more weight.</p>
+<p>
+	I.E.</p>
+<pre class="brush: css">
+.container #content a {color: #someColor;}</pre>
+<p>
+	So, to ensure that your new styles are applied, make sure that they carry enough &quot;weight&quot; and that there isn&#39;t a style lower in the CSS file that is being applied after yours.</p>
+</section>
+<section id="important_notice">
+	<h3>Important Notice</h3><hr class="notop">
+<p>&nbsp;
+	</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56); -webkit-text-size-adjust: none; ">
+	<strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; ">Notice:</strong>&nbsp;As our template goes with an ability to change your template&#39;s color to any, there are two simple steps to set it up.</p>
+<ol style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56); -webkit-text-size-adjust: none; ">
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		Choose your color in HEX format (something like that: #000000)</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		Open your css/style.css file, then go to lines 184, 198, 212, 226, 240, 254, 268, 282, 296 and 310 (it depends on which color scheme you&#39;ll chose as a basic from ten, which is default), then replace their HEX code to your own.</li>
+</ol>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56); -webkit-text-size-adjust: none; ">
+	That&#39;s all, Enjoy it!</p>
+</section>
+<section id="css_files_and_structure">
+	<h3>CSS Files and Structure</h3><hr class="notop">
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px; -webkit-text-size-adjust: none; ">I&#39;m using one main CSS file and two addition styles one for responsibility layout (skeleton.css) and one other for slider settings, there are general styles for whole theme and reset styles inside main style.css. Many browser interpret the default behavior of html elements differently. By using a general reset CSS styles in this file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</span></p>
+<p>&nbsp;
+	</p>
+<pre class="brush: css">
+/* ---------------------- 
+Stylesheet Guide
+-------------------------
+01. Reset
+02. Styling
+    1. Color
+    2. Bg Color
+03. Basic Elements
+    1. Clearfix
+    2. General Classes
+    3. Dividers
+    4. Ordered / Unordered List Styles
+    5. Buttons
+    6. Forms
+    7. Notifications
+04. Header
+05. Header
+    1. Logo
+    2. Social Icons
+    3. Main Navigation
+06. Slider
+07. Page Header
+08. Main
+    1. Breadcrumbs
+09. Content
+    1. 404 Page
+10. Blog
+    1. Comments
+    2. Pagination
+11. Portfolio
+    1. Portfolio Items
+    2. Gallery Items
+12. Contact Us
+13. Sidebar
+    1. Widgets
+        - Search
+        - Popular Posts
+        - Twitter
+        - Flickr
+        - Categories
+        - Archive
+        - Custom Menu
+        - Links
+        - Meta
+        - Pages
+14. Bottom Sidebar
+    1. Widgets
+        - Recent Entries
+        - Upcoming Events
+        - Audio
+15. Footer 
+    1. Widgets
+        - Contacts
+        - Recent Entries
+        - Contact Form
+16. Bottom Footer
+    1. Copyright
+17. Widgets + Shortcodes
+    1. Content Tabs
+    2. FAQ Toggle
+    3. Table
+18. Media Queries
+
+ */</pre>
+<p>
+	If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+<p>
+	Any images that are placed within the blog section have 5px worth of padding and a light bluish background. If you would like to edit the display of these images, find the following section in the style sheet:</p>
+<pre class="brush: css">
+#content .entry img {
+   change styles here:
+}
+</pre>
+<p>&nbsp;
+	</p>
+</section>
+<section id="javascript">
+	<h3>JavaScript</h3><hr class="notop">
+<p>
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56); line-height: 18px; -webkit-text-size-adjust: none; ">This theme imports 10 Javascript files.&nbsp;</span><strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(56, 56, 56); line-height: 18px; -webkit-text-size-adjust: none; ">You can see some help info, when click links which are below each regarding script:</strong></p>
+<ol>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; ">jQuery</strong>&nbsp;- is a Javascript library that greatly reduces the amount of code that you must write. For more information, please visit&nbsp;<a href="http://www.jquery.com/" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">http://www.jquery.com/</a></li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; ">jQuery Fancybox for images, videos, YouTube, iframes</strong>. Refer to the&nbsp;<a href="http://fancybox.net/" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">author&#39;s documentation</a>&nbsp;for additional notes on how to use it.</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; ">jQuery FlickrFeed.</strong>&nbsp;Refer to the&nbsp;<a href="http://www.newmediacampaigns.com/page/jquery-flickr-plugin" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">author&#39;s documentation</a>&nbsp;for additional notes on how to use it.</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; ">jQuery Cycle</strong>&nbsp;Refer to the&nbsp;<a href="http://jquery.malsup.com/cycle/" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">author&#39;s documentation</a>&nbsp;for additional notes on how to use it.</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; ">jQuery Easing</strong><span style="font-family: inherit; font-style: inherit; ">&nbsp;Refer to the&nbsp;</span><a href="http://gsgd.co.uk/sandbox/jquery/easing/" style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">author&#39;s documentation</a><span style="font-family: inherit; font-style: inherit; ">&nbsp;for additional notes on how to use it.</span></li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; ">jQuery Gmap.</strong><span style="font-family: inherit; font-style: inherit; ">&nbsp;Refer to the&nbsp;</span><a href="http://www.smashinglabs.pl/gmap" style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">author&#39;s documentation</a><span style="font-family: inherit; font-style: inherit; ">&nbsp;for additional notes on how to use it.</span></li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; ">jQuery Isotope</strong><span style="font-family: inherit; font-style: inherit; ">&nbsp;Refer to the&nbsp;</span><a href="http://isotope.metafizzy.co" style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">author&#39;s documentation</a><span style="font-family: inherit; font-style: inherit; ">&nbsp;for additional notes on how to use it.</span></li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; ">jQuery TweetsAnywhere</strong><span style="font-family: inherit; font-style: inherit; ">&nbsp;Refer to the&nbsp;</span><a href="http://thomasbillenstein.com/jTweetsAnywhere/" style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">author&#39;s documentation</a><span style="font-family: inherit; font-style: inherit; ">&nbsp;for additional notes on how to use it.</span></li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; ">jQuery MediaElements</strong><span style="font-family: inherit; font-style: inherit; ">&nbsp;Refer to the&nbsp;</span><a href="http://mediaelementjs.com/" style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">author&#39;s documentation</a><span style="font-family: inherit; font-style: inherit; ">&nbsp;for additional notes on how to use it.</span></li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		<strong style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; ">Modernizr</strong><span style="font-family: inherit; font-style: inherit; ">&nbsp;Refer to the&nbsp;</span><a href="http://www.modernizr.com/download/#-touch-shiv-addtest-teststyles-prefixes" style="font-family: inherit; font-style: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; ">author&#39;s documentation</a><span style="font-family: inherit; font-style: inherit; ">&nbsp;for additional notes on how to use it.</span></li>
+</ol>
+</section>
+<section id="contact_form">
+	<h3>Contact Form</h3><hr class="notop">
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 1.5em; -webkit-text-size-adjust: none; ">This template is going with working inbuilt contact form.</span></p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56); -webkit-text-size-adjust: none; ">
+	To make it worked simply open a file php/contact-send.php (line 6) and edit there an email address then upload all the files to your server.</p>
+</section>
+<section id="psd_files">
+	<h3>PSD Files</h3><hr class="notop">
+<p>
+	I&#39;ve included three psds with this theme:</p>
+<ol>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		The main page layout (01_home.psd)</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		The blog&#39;s listing page layout (02_blog.psd)</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal; ">
+		The blog&#39;s single page layout (03_blog_single.psd)</li>
+</ol>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px; -webkit-text-size-adjust: none; ">If you&#39;d like to change the main image in the header, open &quot;01_home.psd&quot;, make the necessary adjustments, and then save the file as &quot;headerBG.png&quot;. Do the same for other elements.</span></p>
+</section>
+<section id="sources_and_credits">
+	<h3>Sources and Credits</h3><hr class="notop">
+<p>
+	I&#39;ve used <a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">Slider Revolution</a>&nbsp;jQuery plugin in this template.</p>
+<p>
+	I&#39;ve used the following images, icons or other files as listed.</p>
+<ul>
+	<li>
+		<a href="http://photodune.net/item/religious-moment/866918">Religious moment</a></li>
+	<li>
+		<a href="http://photodune.net/item/bible/482191">Bible</a></li>
+	<li>
+		<a href="http://photodune.net/item/nature/1674501">Nature</a></li>
+	<li>
+		<a href="http://photodune.net/item/hope-and-freedom/689404">Hope and freedom</a></li>
+	<li>
+		<a href="http://photodune.net/item/happy-man-enjoying-freedoom-against-sky/659605">Happy man enjoying freedom against sky</a></li>
+	<li>
+		<a href="http://photodune.net/item/child-bubble/1805869">Child buble</a></li>
+	<li>
+		<a href="http://photodune.net/item/city-skyline/1011301">City skyline</a></li>
+	<li>
+		<a href="http://photodune.net/item/sunset/524369">Sunset</a></li>
+	<li>
+		<a href="http://photodune.net/item/nature/930538">Nature</a></li>
+	<li>
+		<a href="http://photodune.net/item/freedom/1610494">Freedom</a></li>
+</ul>
+<hr>
+<p>
+	Once again, thank you so much for purchasing this theme. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this theme. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section.</p>
+<p>
+	<strong>ThemeMakers</strong></p>
+</section>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.em-main-container .em-wrapper-banners,
+.em-main-container .img-banner,
+.em-main-container .em-wrapper-ads-15,
+.em-main-container .em-wrapper-ads-10 .em-blog-item {
+  margin-bottom: 20px;
+}
+.em-main-container .em-line-01.em-new-arrivals-tabs {
+  margin-bottom: 0;
+}
+
+.em-wrapper-main .container-main {
+  padding-top: 25px;
+}
+
+.em-wrapper-ads-13 .text-box {
+  margin-bottom: 25px;
+}
+
+.em-slideshow {
+  margin-bottom: 20px;
+}
+.em-slideshow .owl-carousel .owl-item .em-owlcarousel-des {
+  width: 70%;
+  left: 14%;
+  top: 23%;
+  text-align: left;
+}
+.em-slideshow .owl-carousel .owl-item .em-owlcarousel-des h3:before {
+  display: none;
+}
+.em-slideshow .owl-carousel .owl-item .em-owlcarousel-des.em-owlcarousel-des-0 {
+  left: 42%;
+  width: 55%;
+}
+.em-slideshow .owl-carousel .owl-item .em-owlcarousel-des.em-owlcarousel-des-1 {
+  text-align: center;
+}
+.em-slideshow .owl-theme .owl-controls .owl-buttons div {
+  top: 44%;
+}
+
+.em-wrapper-brands {
+  margin-bottom: 50px;
+}
+.em-wrapper-brands .slider-style02 {
+  margin: 0;
+}
+
+/*hide btn in block tab*/
+.em-new-arrivals-tabs .r-tabs .r-tabs-panel {
+  padding-bottom: 0;
+}
+
+/*Main Color Variation*/
+.em-color span.emColorStyle01 {
+  background: #33ccff;
+}
+.em-color span.emColorStyle01:before {
+  background: #ffffff;
+}
+.em-color span.emColorStyle01:after {
+  background: #000000;
+}
+.em-color span.emColorStyle02 {
+  background: #fd3262;
+}
+.em-color span.emColorStyle02:before {
+  background: #ffffff;
+}
+.em-color span.emColorStyle02:after {
+  background: #000000;
+}
+.em-color span.emColorStyle03 {
+  background: #7b344f;
+}
+.em-color span.emColorStyle03:before {
+  background: #ffffff;
+}
+.em-color span.emColorStyle03:after {
+  background: #000000;
+}
+.em-color span.emColorStyle04 {
+  background: #ff0099;
+}
+.em-color span.emColorStyle04:before {
+  background: #ffffff;
+}
+.em-color span.emColorStyle04:after {
+  background: #000000;
+}
+
+/*# sourceMappingURL=style_fashion.css.map */

@@ -1,0 +1,98 @@
+#loading-mask {
+	position:absolute;
+	color:#d85909;
+	font-size:1.1em;
+	font-weight:bold;
+	text-align:center;
+	z-index:500;
+}
+	
+#loading-mask .loader {
+	position:fixed;
+	top:45%;
+	left:50%;
+	width:200px;
+	margin-left:-105px;
+	padding:15px 20px;
+	background:#cfecfc;
+	border:2px solid #1585c7;
+	color:#d85909;
+	font-weight:bold;
+	text-align:center;
+	z-index:1000;
+	opacity:0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE8 */
+}
+#loading-mask .loader > div{
+	display:none;
+}
+
+/* image filter */
+.img-filter { margin-top: 3px; overflow: hidden; }
+.img-filter li { float: left; margin-right: 2px; border: solid 1px white; }
+.img-filter li:hover { border: solid 1px #ccc; }
+.img-filter li.selected { border: solid 1px red; }
+
+/* selectbox filter */
+.block-layered-nav select { margin-top: 3px; }
+
+/* tree filter */
+.tree-filter ol li { padding: 1px 0 1px 16px; }
+.tree-filter li.selected { font-weight: bold; }
+.tree-filter li ol li { font-weight: normal; }
+.tree-filter .icon { 
+	float: left;
+	height: 11px;
+	width: 11px;
+	cursor: pointer;
+	text-indent: -9999px;
+	margin: 4px 4px 0 -15px;
+}
+
+.tree-filter .expanded .icon { background-image: url(../images/em_layerednavigation/expanded.html); }
+.tree-filter .collapsed .icon { background-image: url(../images/em_layerednavigation/collapsed.html); }
+
+/* range filter */
+.rslider { margin-top: 10px; }
+
+.rslider .ui-slider, 
+.rslider .ui-slider-range, 
+.rslider .ui-slider-handle {
+	background-image: url(../images/em_layerednavigation/slider.html);
+}
+
+.rslider .ui-slider {
+	position: relative;
+	background-position: -2px 0;
+	height: 5px;
+}
+
+.rslider .ui-slider-range {
+	background-position: 0 -20px;
+	background-repeat: repeat-x;
+	position: absolute;
+	height: 5px;
+}
+
+.rslider .ui-slider-handle {
+	background-position: 0 -40px;
+	position: absolute;
+	cursor: pointer;
+	height: 15px;
+	width: 13px;
+	top: -4px;
+}
+
+.rslider .values { overflow: hidden; margin-top: 7px; }
+.rslider #from-val { float: left; }
+.rslider #to-val { float: right; }
+
+#narrow-by-list .filter-act {
+	margin-bottom: 7px;
+    margin-top: -15px;
+    overflow: hidden;
+}
+
+#narrow-by-list .btn-remove {
+	margin: 0
+}
